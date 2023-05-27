@@ -1,17 +1,29 @@
 ---
-title: Pandoc al rescate 
+title: Pandoc al rescate
 author: Daniel Molina
 date: Charla/Taller
 ---
 
-# ¿Qué es pandoc? 
+# ¿Qué es pandoc?
 
 ## Multiconversor de archivos
 
 - Una auténtica navaja suiza.
+
+. . .
+
 - código abierto.
+
+. . .
+
 - creado por el profesor de filosofía [John MacFarlane](https://www.johnmacfarlane.net/)
+
+. . .
+
 - Permite pasar de markdown a todo tipo de salida.
+
+. . .
+
 - extendible con plugins.
 
 ## Una imagen mejor que mil palabras.
@@ -47,8 +59,8 @@ ls pandoc.md | entr make pandoc.html
 - make (para usar makefile).
 
 - python3, para poder instalar las extensiones:
-   - pandoc-include: Incluya otro.
-   - pandoc-citeproc: Referencias.
+  - pandoc-include: Incluya otro.
+  - pandoc-citeproc: Referencias.
 
 # Sobre Markdown
 
@@ -64,30 +76,30 @@ ls pandoc.md | entr make pandoc.html
 
 . . .
 
-- Muchas herramientas de documentación lo usan. 
+- Muchas herramientas de documentación lo usan.
 
 . . .
 
 <!-- -->
 
-* Generadores de páginas webs (jekyll, hugo, ...).
+- Generadores de páginas webs (jekyll, hugo, ...).
 
 # Formato de Markdown
 
 ## Tipo de fuente
 
 ```markdown
-Es sencillo poner **negritas**, *cursiva* y ~~tachar~~.
+Es sencillo poner **negritas**, _cursiva_ y ~~tachar~~.
 ```
 
-Es sencillo poner **negritas**, *cursiva* y ~~tachar~~.
+Es sencillo poner **negritas**, _cursiva_ y ~~tachar~~.
 
 ## Enlaces
 
 ```markdown
 - Enlace directo: duckduckgo es <http://www.duck.com>
-- Indicando texto y enlace: 
-                        [duckduckgo](http://www.duck.com)
+- Indicando texto y enlace:
+  [duckduckgo](http://www.duck.com)
 ```
 
 - Enlace directo: duckduckgo es <http://www.duck.com>
@@ -97,13 +109,17 @@ Es sencillo poner **negritas**, *cursiva* y ~~tachar~~.
 
 ```markdown
 # Titulo
+
 ## Sección (Nueva Transparencia)
-### Apartado (bloque) 
+
+### Apartado (bloque)
 
 Texto
 ```
+
 ## Sección (Nueva Transparencia)
-### Apartado (bloque) 
+
+### Apartado (bloque)
 
 Texto
 
@@ -146,7 +162,7 @@ $$
 ## Pie de páginas
 
 ```raw
-Se puede poner un pie de páginas. 
+Se puede poner un pie de páginas.
 Todo enseñado en el taller[^1]
 
 [^1]: https://osl.ugr.es/2021/11/03/taller-de-pandoc/
@@ -168,20 +184,23 @@ Todo enseñado en el taller[^1]
 Tabla:  Demostración de una tabla sencilla
 ```
 
-  Right     Left     Center     Default
--------     ------ ----------   -------
-     12     12        12            12
-   1234     1234     1234          1234
+Right Left Center Default
 
-Tabla:  Demostración de una tabla sencilla
+---
+
+     12     12        12            12
+
+1234 1234 1234 1234
+
+Tabla: Demostración de una tabla sencilla
 
 ## Incluir código fuente y tablas
 
-```raw
+````raw
 ```python
 print("Buenas tardes a todos")
 \```
-```
+````
 
 ```python
 print("Buenas tardes a todos")
@@ -204,7 +223,7 @@ Markdown de Pandoc admite otros elementos, descritos en [^2].
 pandoc -s pandoc.md -o pandoc.html
 # exporta en LibreOffice (va mejor que en Word)
 pandoc pandoc.md -o pandoc.odt
-# exporta en pdf usando latex (documento) 
+# exporta en pdf usando latex (documento)
 pandoc pandoc.md -t latex -o pandoc.pdf
 # exporta en transparencias en pdf usando beamer
 pandoc pandoc.md -t beamer -o pandoc.pdf
@@ -212,7 +231,7 @@ pandoc pandoc.md -t beamer -o pandoc.pdf
 pandoc pandoc.md -t beamer -Vtheme= -o pandoc.pdf
 ```
 
-. . . 
+. . .
 
 Hay muchas opciones, se puede complicar, lo vemos en detalle con el taller.
 
@@ -220,7 +239,7 @@ Hay muchas opciones, se puede complicar, lo vemos en detalle con el taller.
 
 ## Extensiones de Pandoc.
 
-- Referencias. 
+- Referencias.
 
 - Tablas.
 
@@ -238,9 +257,9 @@ Hay muchas opciones, se puede complicar, lo vemos en detalle con el taller.
 
 - Resaltar código.
 
-## Documentos 
+## Documentos
 
-- Referencias. 
+- Referencias.
 
 - Citar figuras.
 
@@ -251,5 +270,3 @@ Hay muchas opciones, se puede complicar, lo vemos en detalle con el taller.
 2. Crearemos un documento con referencias, tablas y figuras.
 
 3. Veremos otros ejemplos.
-
-

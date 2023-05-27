@@ -1,7 +1,7 @@
 pandoc.html: pandoc.md
 	pandoc pandoc.md --mathjax -t revealjs -s -V theme:beige -o pandoc.html
 
-all: pandoc.html pandoc_berlin.pdf pandoc.pdf pandoc_warsaw.pdf
+all: pandoc.html pandoc_berlin.pdf pandoc_doc.pdf pandoc_warsaw.pdf
 
 pandoc.epub: pandoc.md
 	pandoc pandoc.md --epub-cover-image=pandoc_cartel.png --toc --toc-depth=1 -o pandoc.epub
